@@ -1,0 +1,6 @@
+if SHIELD_MICKEY
+
+config ZMK_KEYBOARD_NAME
+    default "mickey"
+
+endif
