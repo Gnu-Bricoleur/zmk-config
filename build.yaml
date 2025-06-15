@@ -21,3 +21,4 @@
 include:
   - board: seeeduino_xiao_ble
     shield: mickey
+    snippet: zmk-usb-logging
