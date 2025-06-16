@@ -4,52 +4,13 @@
 #include <dt-bindings/zmk/outputs.h>
 
 / {
-    macros {
-        finder_home: finder_home {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            wait-ms = <40>;
-            tap-ms = <40>;
-            bindings =
-                <&macro_press &kp LEFT_COMMAND>,
-                <&macro_press &kp LEFT_SHIFT>,
-                <&macro_tap &kp H>,
-                <&macro_release &kp LEFT_COMMAND>,
-                <&macro_release &kp LEFT_SHIFT>;
-        };
-        finder_desktop: finder_desktop {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            wait-ms = <40>;
-            tap-ms = <40>;
-            bindings =
-                <&macro_press &kp LEFT_COMMAND>,
-                <&macro_press &kp LEFT_SHIFT>,
-                <&macro_tap &kp D>,
-                <&macro_release &kp LEFT_COMMAND>,
-                <&macro_release &kp LEFT_SHIFT>;
-        };
-        finder_downloads: finder_downloads {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            wait-ms = <40>;
-            tap-ms = <40>;
-            bindings =
-                <&macro_press &kp LEFT_COMMAND>,
-                <&macro_press &kp LEFT_ALT>,
-                <&macro_tap &kp L>,
-                <&macro_release &kp LEFT_COMMAND>,
-                <&macro_release &kp LEFT_ALT>;
-        };
-    };
     keymap {
         compatible = "zmk,keymap";
 
         default_layer {
             bindings = <
-                &bt BT_CLR  &finder_downloads  &finder_desktop  &finder_home
+                &bt BT_CLR  &kp A  &kp B  &kp C 
             >;
-            sensor-bindings = <&inc_dec_kp UP DOWN>;
         };
     };
 };
