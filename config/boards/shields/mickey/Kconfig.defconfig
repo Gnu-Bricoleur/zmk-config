@@ -1,3 +1,17 @@
+if SHIELD_MICKEY_DONGLE
+
+config ZMK_KEYBOARD_NAME
+	default "Mickey Dongle"
+	
+config ZMK_SPLIT_BLE_ROLE_CENTRAL
+	default y
+	
+config ZMK_USB
+	default y
+
+endif
+
+
 if SHIELD_MICKEY
 
 config ZMK_KEYBOARD_NAME
