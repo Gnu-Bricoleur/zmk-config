@@ -17,9 +17,4 @@
             <&xiao_d 3 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>;
     };
 	
-	
-	mouse_input_listener {
-		compatible = "zmk,input-listener";
-		device = <&pd0>;
-	};
 };
