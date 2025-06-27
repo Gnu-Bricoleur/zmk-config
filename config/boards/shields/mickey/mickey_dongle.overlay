@@ -3,7 +3,6 @@
 / {
     chosen {
         zmk,kscan = &default_kscan;
-		zmk,input-listener = &mouse_input_listener;
     };
 
 	
