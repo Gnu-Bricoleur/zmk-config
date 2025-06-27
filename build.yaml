@@ -22,5 +22,8 @@ include:
   - board: seeeduino_xiao_ble
     shield: mickey
     snippet: zmk-usb-logging
+    cmake-args: -DCONFIG_ZMK_SPLIT=y -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=n
   - board: seeeduino_xiao_ble
     shield: mickey_dongle
+  - board: seeeduino_xiao_ble
+    shield: settings_reset
